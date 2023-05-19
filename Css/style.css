@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Satisfy&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Bahnschrift;
+  letter-spacing: 1px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eeeeee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --backgroundColor: #185a9d;
+  --textColor: #ffffff;
+  --secondBackground: #f9f8b9;
+
+  --boxShadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.75);
+  --innerBoxShadow: inset -1px -1px 5px 0px #185a9d;
+  --margin: 50px 10%;
+  --padding: 20px 10%;
+  --mostheading: 4rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin: 20px 10%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.heading a {
+  margin: 0px 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  color: var(--backgroundColor);
+}
+
+.line {
+  width: 100px;
+  background-color: var(--backgroundColor);
+  height: 0.5vh;
+  margin: 0px 10%;
+}
+
+/* Scroll Bar Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--backgroundColor);
+}
+
+/* Navbar */
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: var(--padding);
+  background-color: var(--backgroundColor);
+}
+
+.navigationBar img {
+  width: 200px;
+}
+.navigationBar .contactUs a {
+  padding: 10px;
+  background-color: var(--secondBackground);
+  color: var(--backgroundColor);
+  border-radius: 20px;
+  margin: 0px 10px;
+  transition: all;
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+}
+.contactUs a:hover {
+  color: white;
+  background-color: var(--backgroundColor);
+}
+/* Starter */
+.starter {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #2193b0ba, #6dd5edba),
+    url("../Images/background1.jpg");
+
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  background-repeat: no-repeat;
+}
+
+.starter h1 {
+  font-size: var(--mostheading);
+  letter-spacing: 2px;
+  color: var(--textColor);
+  font-family: "Satisfy", cursive;
+
+  text-align: center;
+  filter: drop-shadow(1px 2px 1px black);
+}
+
+.starter h1 img {
+  width: 200px;
+}
+
+.starter div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(1px 2px 1px black);
+}
+
+.starter a {
+  background: transparent;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+  color: #185a9d;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    #185a9d 50%,
+    #185a9d
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.25s ease-in;
+  text-decoration: none;
+}
+
+.starter a:hover {
+  background-position: 0 0;
+  color: white;
+}
+
+.starter form {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  justify-content: center;
+  width: 100%;
+  filter: drop-shadow(1px 2px 1px black);
+}
+
+.starter form input {
+  width: 30%;
+  padding: 12px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.starter form button {
+  width: 80px;
+  padding: 12px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  border: none;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  cursor: pointer;
+  outline: none;
+}
+
+.starter form input:hover {
+  border: none;
+  box-shadow: var(--innerBoxShadow);
+}
+
+/* view */
+.viewHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: var(--backgroundColor);
+
+  height: 40vh;
+}
+
+.viewHeader div {
+  margin: var(--margin);
+  color: var(--textColor);
+  filter: drop-shadow(5px 4px 3px black);
+}
+
+.viewHeader div h1 {
+  font-size: var(--mostheading);
+  font-family: "Satisfy", cursive;
+}
+
+.profile {
+  display: flex;
+  margin: var(--margin);
+  width: 80%;
+}
+
+.profile p {
+  width: 70%;
+  padding: 20px;
+}
+
+.profile div {
+  display: flex;
+  justify-content: center;
+  margin-top: -200px;
+  width: 30%;
+  box-shadow: var(--innerBoxShadow);
+  padding: 10px;
+  background-color: white;
+}
+
+.profile div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Education  */
+.education {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: var(--margin);
+  width: 100%;
+  background-image: url("../Images/eduBack.jpg");
+  /* background-color: var(--secondBackground); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.individualEducation {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  /* background-color: ; */
+  margin: 30px 0px;
+  border-bottom: 1px solid var(--backgroundColor);
+}
+
+.individualEducation ul {
+  display: flex;
+}
+
+.individualEducation ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.individualEducation ul li img {
+  margin: 5px;
+}
+
+.schoolName {
+  display: flex;
+
+  justify-content: space-between;
+  color: #185a9d;
+}
+
+.schoolName small {
+  color: var(--backgroundColor);
+}
+
+.degree {
+  box-shadow: var(--innerBoxShadow);
+  padding: 10px;
+  background-color: white;
+  color: var(--backgroundColor);
+  margin-bottom: 10px;
+}
+
+/* Our Projects */
+.projects {
+  display: flex;
+  padding: var(--margin);
+  width: 100%;
+  justify-content: center;
+  background-image: linear-gradient(90deg, #185a9d 50%, #f9f8b9 50%);
+  margin: 30px 0px;
+  flex-wrap: wrap;
+}
+
+.individualProject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 30px 1.5%;
+  height: 30vh;
+  box-shadow: var(--boxShadow);
+  overflow: hidden;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+.projectImg {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all;
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  filter: grayscale(0.5);
+  color: var(--backgroundColor);
+}
+.projectImg h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+}
+.projectImg:hover {
+  transform: scale(1.2, 1.2);
+  filter: grayscale(0);
+}
+.projectImg:hover a {
+  display: block;
+}
+
+.projectImg a {
+  display: none;
+  background: transparent;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #185a9d;
+  padding: 10px;
+
+  background-color: white;
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    #185a9d 50%,
+    #185a9d
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.25s ease-in;
+  text-decoration: none;
+}
+
+.individualProject a:hover {
+  background-position: 0 0;
+  color: white;
+}
+
+/* Experience */
+.experience {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: var(--margin);
+  height: 50%;
+}
+.experienceImg {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  padding: 10px;
+  box-shadow: var(--innerBoxShadow);
+}
+.experienceImg img {
+  width: 100%;
+}
+
+.experienceContent {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: 50px;
+  background-color: #185a9d;
+}
+.experienceContent ul {
+  width: 100%;
+}
+.experienceContent h1 {
+  color: var(--secondBackground);
+}
+.experienceContent ul li {
+  list-style-type: decimal-leading-zero;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: var(--margin);
+}
+.individualSkill {
+  width: 30%;
+  margin: 20px 1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.individualSkill img {
+  width: 100px;
+  height: 80px;
+  border-radius: 20px;
+}
+.individualSkill h2 {
+  margin: 10px 0px;
+  color: var(--backgroundColor);
+}
+/* Project Viewer */
+.projectViewer {
+  width: 60%;
+  display: none;
+  flex-direction: column;
+  margin: 15vh 20%;
+  background-color: white;
+  position: fixed;
+  box-shadow: var(--boxShadow);
+  height: 80vh;
+  z-index: 2;
+  overflow: scroll;
+  padding: 20px;
+}
+.projectViewer h1 {
+  color: var(--backgroundColor);
+}
+.projectViewer h1 small {
+  color: black;
+}
+.projectViewer i {
+  float: right;
+  color: var(--backgroundColor);
+  cursor: pointer;
+}
+.projectViewer i:hover {
+  color: red;
+}
+.projectContent div,
+.projectContent ul {
+  margin: 10px;
+}
+.projectImages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.projectImages img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+/* footer */
+.mainFooter {
+  display: flex;
+  margin-top: auto;
+
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  justify-content: center;
+}
+.mainFooter b {
+  color: var(--backgroundColor);
+}
+/* Login Form*/
+.loginForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loginForm form {
+  width: 30%;
+  background-color: white;
+  box-shadow: var(--boxShadow);
+  display: flex;
+  flex-direction: column;
+}
+.loginHeader {
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30%;
+  background-color: var(--backgroundColor);
+}
+.loginHeader i {
+  margin-bottom: 10px;
+  color: var(--secondBackground);
+  filter: drop-shadow(1px 2px 1px black);
+}
+.loginHeader h1 {
+  display: flex;
+  align-items: center;
+}
+.loginHeader h1 img {
+  width: 100px;
+  margin: 0px 10px;
+  filter: drop-shadow(1px 2px 1px black);
+}
+.inputFields {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.inputFields input {
+  outline: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--backgroundColor);
+}
+.formBtn {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formBtn small:hover {
+  cursor: pointer;
+  color: var(--backgroundColor);
+}
+.formBtn button {
+  background: transparent;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid var(--backgroundColor);
+  cursor: pointer;
+  color: white;
+  padding: 5px 20px;
+
+  background-color: var(--backgroundColor);
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    white 50%,
+    white
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.25s ease-in;
+  text-decoration: none;
+}
+
+.formBtn button:hover {
+  background-position: 0 0;
+  color: var(--backgroundColor);
+}
+/* Signup Form */
+.educationForm {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.educationForm input,
+.educationForm textarea {
+  outline: none;
+  border: 1px solid var(--backgroundColor);
+  padding: 10px;
+  margin: 20px 1.5%;
+  width: 30%;
+}
+.signupForm .mainBtn {
+  background: transparent;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid var(--backgroundColor);
+  cursor: pointer;
+  color: white;
+  padding: 5px 20px;
+  margin: 20px 1.5%;
+  background-color: var(--backgroundColor);
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    white 50%,
+    white
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.25s ease-in;
+  text-decoration: none;
+}
+.signupForm button:hover {
+  background-position: 0 0;
+  color: var(--backgroundColor);
+}
+/* Not Found*/
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.notFound h1 {
+  font-family: "Satisfy", cursive;
+  color: var(--backgroundColor);
+  font-size: 5rem;
+  filter: drop-shadow(1px 2px 1px black);
+}
+/* Dashboard */
+.dashoboardHeading {
+  display: flex;
+  align-items: center;
+}
+.dashoboardHeading i {
+  margin: 0px 20px;
+  color: var(--secondBackground);
+}
+/* Popup */
+.popup {
+  margin: 0px 35%;
+  margin-top: 30vh;
+  background-color: var(--secondBackground);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 30%;
+  padding: 50px;
+  box-shadow: var(--boxShadow);
+}
+.popupBtn button {
+  background: transparent;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid var(--backgroundColor);
+  cursor: pointer;
+  color: white;
+  padding: 5px 20px;
+  margin: 20px 1.5%;
+  background-color: var(--backgroundColor);
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    white 50%,
+    white
+  );
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 0.25s ease-in;
+  text-decoration: none;
+}
+
+.popupBtn button:hover {
+  background-position: 0 0;
+  color: var(--backgroundColor);
+}
+
+/*Image Upload*/
+.imageUpload {
+  display: block;
+  width: 100%;
+  padding: 20px;
+}

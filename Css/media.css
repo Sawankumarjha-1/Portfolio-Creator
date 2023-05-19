@@ -1,0 +1,95 @@
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .individualProject {
+    width: 45%;
+  }
+  .individualSkill {
+    width: 45%;
+  }
+
+  .loginForm form {
+    width: 70%;
+    margin: 15vh 15%;
+  }
+  .loginHeader h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-device-width: 200px) and (max-device-width: 600px) {
+  .starter h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .starter form input {
+    width: 70%;
+  }
+  .navigationBar img {
+    width: 100px;
+  }
+  .notFound h1 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .individualProject {
+    width: 100%;
+  }
+  .projectViewer {
+    width: 90%;
+
+    margin: 15vh 5%;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+  }
+  .experienceImg {
+    width: 100%;
+  }
+  .experienceContent {
+    width: 100%;
+  }
+  .individualSkill {
+    width: 100%;
+  }
+  .viewHeader div h1 {
+    font-size: 2rem;
+  }
+  .educationForm input,
+  .educationForm textarea {
+    width: 100%;
+  }
+  .loginForm form {
+    width: 90%;
+    margin: 15vh 5%;
+  }
+  .loginHeader h1 {
+    font-size: 16px;
+  }
+  .popup {
+    margin: 0px 15%;
+
+    width: 70%;
+  }
+}
+@media screen and (min-device-width: 200px) and (max-device-width: 1024px) {
+  .viewHeader {
+    height: 40vh;
+  }
+  .profile {
+    flex-direction: column-reverse;
+  }
+  .profile p {
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+  }
+  .profile div {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .projectViewer {
+    width: 90%;
+
+    margin: 15vh 5%;
+  }
+}
